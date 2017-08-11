@@ -4,9 +4,13 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.10.7",
+    "morgan": "^1.8.2",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "passport-local": "^1.0.0",
@@ -21,10 +25,7 @@
     "redux": "^3.7.0",
     "redux-thunk": "^2.2.0",
     "sass": "^1.0.0-beta.1",
-    "body-parser": "^1.17.2",
-    "validator": "^8.0.0",
-      "morgan": "^1.8.2",
-      "mongoose": "^4.10.7"
+    "validator": "^8.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -47,7 +48,6 @@
     "backend": "node server/index",
     "frontend": "webpack --watch",
     "dev": "start npm run backend &&  npm run frontend",
-    "start":"node server/index"
-
+    "start": "node server/index"
   }
 }
