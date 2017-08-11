@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Note Entries - By Comfort Ajala</title>
+</head>
+<body>
+
+  <div class="content">
+        <div class="content-background">
+            <div class="content-pane">
+                    <div class="top-pane">
+                    <figure><img src="/uploads/bubbles.svg" id="bubbles"/></figure>
+                    <div class="home-header-text">
+                        <p>write a note</p>
+                        <p>save it</p>
+                        <p>log out </p>
+                    </div>
+                    </div>
+
+                    <div class="bottom-pane">
+                          <a href="/registerform">join us</a>
+                          <a href="/loginform">log in</a>
+                    </div>
+
+
+            </div>
+            <%if (notes.length > 0) { %>
+              <div class="noteslist">
+                <h3>Public Notes </h3>
+              <ul>
+                  <% for(var i=0; i<notes.length; i++)
+                   {%>
+                        <li>
+                          <a href=<%=  '/note/'+notes[i]._id %> target="_blank" ><h5><%= notes[i].title %></h5></a>
+                        </li>
+                  <% } %>
+                  </ul>
+              </div>
+            <% } %>
+        </div>
+  </div>
+
+      <script src="/js/home.js"></script>
+</body>
+
+</html>
