@@ -53,8 +53,8 @@
   "scripts": {
     "backend": "node server/index",
     "frontend": "webpack --watch",
-    "fullstack": "start npm run backend &&  start npm run frontend",
-    "test": "jest --watch",
-    "dev": "start npm run backend &&  npm run frontend"
+    "dev": "start npm run backend &&  npm run frontend",
+    "start":"node server/index"
+
   }
 }
