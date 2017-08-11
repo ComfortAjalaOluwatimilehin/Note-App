@@ -3,7 +3,6 @@ app = express(),
 bodyParser = require("body-parser"),
 passport = require("passport"),
 path = require("path"),
-debug = require('debug')('http'),
 morgan = require("morgan")
 //setup database connections
 var databaseConnection = require("./db/setup")()
