@@ -21,6 +21,7 @@
     "redux": "^3.7.0",
     "redux-thunk": "^2.2.0",
     "sass": "^1.0.0-beta.1",
+    "body-parser": "^1.17.2",
     "validator": "^8.0.0"
   },
   "devDependencies": {
@@ -28,7 +29,6 @@
     "babel-loader": "^7.1.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "body-parser": "^1.17.2",
     "chai": "^4.1.0",
     "chai-http": "^3.0.0",
     "css-loader": "^0.28.4",
