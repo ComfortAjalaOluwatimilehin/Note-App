@@ -8,7 +8,7 @@ morgan = require("morgan")
 //setup database connections
 var databaseConnection = require("./db/setup")()
 //setup environment
-process.env.PROD_DEV = false //if true --> prod; else DEV
+process.env.PROD_DEV = true //if true --> prod; else DEV
 var PROD = false;
 if(PROD == false){
   app.use(morgan("combined"))
