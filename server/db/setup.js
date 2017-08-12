@@ -7,5 +7,3 @@ config = require(path.resolve(__dirname, "..", "config", "config"))
           return dbconnection
 }
 */
-
-console.log("Stoppped mongo connection")
