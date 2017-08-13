@@ -5,7 +5,7 @@ passport = require("passport"),
 path = require("path"),
 morgan = require("morgan")
 //setup database connections
-//var databaseConnection = require("./db/setup")()
+var databaseConnection = require("./db/setup")()
 //setup environment
 process.env.PROD_DEV = true //if true --> prod; else DEV
 var PROD = false;
