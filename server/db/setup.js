@@ -4,7 +4,7 @@ config = require(path.resolve(__dirname, "..", "config", "config"))
 
 module.exports =function(){
         console.log("About to connect to DB")
-          var dbconnection= mongoose.connect(config.DB_NAME, ()=>console.log("Database Connected at ", config.DB_NAME))
+          var dbconnection= mongoose.connect(config.LOCAL_DB_NAME, ()=>console.log("Database Connected at ", config.LOCAL_DB_NAME))
           return dbconnection
 
 
